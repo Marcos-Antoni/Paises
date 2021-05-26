@@ -1,3 +1,3 @@
 # api de paises
 
-(./design/desktop-design-detail-dark.jpg)
+![Design preview for the Huddle landing page with single introductory section](./design/desktop-design-detail-dark.jpg)
