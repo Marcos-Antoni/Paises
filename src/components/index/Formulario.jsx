@@ -164,11 +164,13 @@ export default function Formulario({
 			</ContenedorDeInput>
 
 			<ContenedorDeSwiper>
-				<i
-					className="fas fa-angle-left"
-					onClick={() => {
-						moverSwiperDeNumeros(infoDeSwiper.activeIndex - 5)
-					}}></i>
+				{arrayDeUbicacionDeSwiper.length > 5 && (
+					<i
+						className="fas fa-angle-left"
+						onClick={() => {
+							moverSwiperDeNumeros(infoDeSwiper.activeIndex - 5)
+						}}></i>
+				)}
 				<SwiperEditado
 					as={Swiper}
 					onSwiper={swiper => setInfoDeSwiper(swiper)}
@@ -185,11 +187,13 @@ export default function Formulario({
 						</SwiperSlide>
 					))}
 				</SwiperEditado>
-				<i
-					className="fas fa-angle-right"
-					onClick={() => {
-						moverSwiperDeNumeros(infoDeSwiper.activeIndex + 5)
-					}}></i>
+				{arrayDeUbicacionDeSwiper.length > 5 && (
+					<i
+						className="fas fa-angle-right"
+						onClick={() => {
+							moverSwiperDeNumeros(infoDeSwiper.activeIndex + 5)
+						}}></i>
+				)}
 			</ContenedorDeSwiper>
 
 			<SelectDeContinente

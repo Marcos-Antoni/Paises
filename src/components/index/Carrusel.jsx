@@ -20,7 +20,6 @@ export default function Carrusel({
 
 	// funcion
 	const cantidadDeTargetasPermitidas = width => {
-		// console.log(width)
 		if (width >= 840) {
 			setCantidadDeTargetas(8)
 		} else if (width >= 600) {

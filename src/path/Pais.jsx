@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { useParams, Link } from "react-router-dom"
 
 //hooks
@@ -44,10 +44,6 @@ export default function Pais() {
 			infoName: info[0].languages && info[0].languages.map(e => e.name),
 		},
 	]
-
-	useEffect(() => {
-		console.log(info)
-	}, [info])
 
 	return (
 		<GridContenedorDePais col={[2]} gap={["50px", "35px"]}>
