@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 style-guide.md
-yarn.lock
 /.vscode
 
 # testing
